@@ -131,3 +131,31 @@ body{
         }
     }
 }
+
+//block-info
+#block-info{
+    background-color: $grenat;
+    color : $blanc;
+    text-transform: uppercase;
+    .group{
+        position: relative;
+        width: 240px;
+        margin: 15px auto;
+        padding-left: 70px;
+        height: 60px;
+        img{
+            position: absolute;
+            left: 30px;
+            transform: translate(-50%,-50%);
+            top : 50%;
+        }
+        span{
+            font-size: 18px;
+            line-height: 1.2;
+            display: inline-block;
+            position: absolute;
+            top : 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
