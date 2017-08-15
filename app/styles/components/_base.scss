@@ -1,0 +1,133 @@
+body{
+    font-family: "robotoregular";
+    color : $noir;
+}
+
+.btn-orange{
+    background-color: $orange;
+    text-transform: uppercase;
+    color: $blanc;
+    font-family: "robotobold";
+    font-size: 11px;
+    letter-spacing: 0.047em;
+    height: 30px;
+    border-radius : 3px;
+    padding: 0 15px;
+    line-height: 30px;
+    display: inline-block;
+    &:hover{
+        text-decoration: none;
+        color: $blanc;
+    }
+    
+}
+
+.section-part{
+    &.gris{
+        background-color: $gris-formation;
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 400;
+        color: $noir;
+        margin-bottom: 22px;
+        margin-top: 0;
+    }
+}
+
+#formation{
+    padding: 25px 0;
+    .grid-formation{
+        .first-box{
+            width : 300px;
+            height: 180px;
+            position: relative;
+            overflow: hidden;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 20px;
+            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+            .titre-box{
+                color : $blanc;
+                text-transform: uppercase;
+                font-family: "robotobold";
+                font-size: 14px;
+                letter-spacing: 0.047em;
+                position: absolute;
+                top : 50%;
+                left : 50%;
+                transform : translate(-50%,-50%);
+                background-color: rgba(0,0,0,0.8);
+                height: 40px;
+                line-height: 40px;
+                padding: 0 15px;
+                white-space: nowrap;
+            }
+            .box-formation{
+                opacity : 0;
+                @include transition(opacity 0.3s ease);
+                text-align: center;
+                position: absolute;
+                width : 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.8);
+                .inner-box{
+                    position: absolute;
+                    top : 50%;
+                    transform : translateY(-50%);
+                    h3{
+                        margin-top: 0;
+                        text-transform: uppercase;
+                        color : $blanc;
+                        font-weight: 400;
+                        font-family: "robotobold";
+                        font-size: 14px;
+                        letter-spacing: 0.047em;
+                    }
+                    p{
+                        color : $blanc;
+                        font-size: 14px;
+                        font-family: "robotoregular";
+                    }
+                    
+                }
+                
+            }
+
+        }
+    }
+}
+
+// recrute
+#recrute{
+    text-align: center;
+    padding: 30px 0;
+    .titre-recrute{
+        font-family: "robotomedium";
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    p{
+        font-family: "robotolight";
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 1.2;
+    }
+    .btn-orange{
+        min-width: 180px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "robotobold";
+        font-size: 14px;
+        letter-spacing: 0.047em;
+        &:hover{
+            background-color: $orange-hover;
+        }
+    }
+}

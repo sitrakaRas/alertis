@@ -1,0 +1,25 @@
+$grid-gutter-width:         20px;
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             (748px + $grid-gutter-width);
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet;
+
+// Medium screen / desktop
+$container-desktop:            (960px + $grid-gutter-width);
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop;
+
+// Large screen / wide desktop
+$container-large-desktop:      (960px + $grid-gutter-width);
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop;
+
+$gris-formation : #eeeeee;
+$noir : #000;
+$blanc : #fff;
+$orange : #e94e1b;
+$orange-hover : #cd3c0c;

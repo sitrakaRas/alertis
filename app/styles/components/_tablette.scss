@@ -1,0 +1,30 @@
+.section-part{
+    h2{
+        font-size: 25px;
+        margin-bottom: 35px;
+        margin-top: 0;
+    }
+}
+
+#formation{
+    padding: 40px 0;
+    .grid-formation{
+        .first-box{
+            width : 100%;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+// recrute
+#recrute{
+    padding: 35px 0 50px;
+    .titre-recrute{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 22px;
+        margin-bottom: 45px;
+    }
+}

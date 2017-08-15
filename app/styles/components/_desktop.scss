@@ -1,0 +1,25 @@
+.section-part{
+    h2{
+        font-size: 25px;
+        margin-bottom: 35px;
+        margin-top: 0;
+    }
+}
+
+#formation{
+    .grid-formation{
+        .first-box{
+            &:hover{
+                .box-formation{
+                    opacity: 1;
+                    @include transition(opacity 0.3s ease);                   
+                }
+            }
+        }
+    }
+}
+
+// recrute
+#recrute{
+    padding: 50px 0 55px;
+}
