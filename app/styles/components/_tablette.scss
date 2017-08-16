@@ -152,3 +152,43 @@
         }
     }
 }
+
+// actus-dossier
+#actus-dossier{
+    background-color: $violet-claire;
+    overflow-x: hidden; 
+    .titre-block{
+        font-size: 16px;
+        font-family: "robotobold";
+        text-transform: uppercase;
+        font-weight: 400;
+        color : $grenat;
+        background-color: $blanc;
+        display: inline-block;
+        height: 30px;
+        padding: 0 10px;
+        line-height: 30px;
+        i{
+            padding-right: 5px;
+        }
+    }
+    .actus-block{
+        height: 510px;
+        padding-right: 25px;
+    }
+    .dossier-block{
+        background-color: $violet-fonce;
+        height: 510px;
+        padding-left: 25px;
+        &:before{
+            right: -999em;
+            content: '';
+            background-color: $violet-fonce;
+            display: block;
+            position: absolute;
+            width : 999em;
+            top : 0;
+            bottom : 0;
+        }
+    }
+}
