@@ -1,5 +1,5 @@
 .section-part{
-    h2{
+    h2,.titre-section{
         font-size: 25px;
         margin-bottom: 35px;
         margin-top: 0;
@@ -45,6 +45,52 @@
     .search-input{
         input{
             width : 267px;
+        }
+    }
+}
+
+// centre-formation
+#centre-formation{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    .left-box{
+        text-align: right;
+        p{
+            font-size: 14px;
+            margin-bottom: 15px;
+            strong{
+                font-size: 16px;
+                font-family: "robotobold";
+                font-weight: 400;
+                line-height: 1;
+            }
+        }
+    }
+    .img-center{
+        img{
+            max-width: 100%;
+        }
+    }
+    .right-box{
+        text-align: left;
+        h3{
+            font-family: "robotobold";
+            font-weight: 400;
+            font-size: 18px;
+            background-color: $orange;
+            text-transform: uppercase;
+            color : $blanc;
+            display: inline-block;
+            line-height: 30px;
+            padding: 0 15px;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+        p{
+            font-size: 16px;
+            span{
+                color : $rouge;
+            }
         }
     }
 }

@@ -1,11 +1,3 @@
-.section-part{
-    h2{
-        font-size: 25px;
-        margin-bottom: 35px;
-        margin-top: 0;
-    }
-}
-
 #formation{
     .grid-formation{
         .first-box{
@@ -36,5 +28,12 @@
         input{
             width : 307px;
         }
+    }
+}
+
+// centre-formation
+#centre-formation{
+    .right-box{
+        text-align: right;
     }
 }
