@@ -37,3 +37,23 @@
         text-align: right;
     }
 }
+
+// agrement
+#agrement{
+    margin-bottom: 35px;
+    .box-agrement{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .box-img{
+        padding-top: 0px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+// confiance
+#confiance{
+    padding-top: 20px;
+}
