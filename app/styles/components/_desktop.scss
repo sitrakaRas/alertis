@@ -23,3 +23,18 @@
 #recrute{
     padding: 50px 0 55px;
 }
+
+//recherche
+#recherche{
+    height: 90px;
+    .block-s{
+        &.offset-1-l{
+            margin-left: 8.3333%;
+        }
+    }
+    .search-input{
+        input{
+            width : 307px;
+        }
+    }
+}

@@ -159,3 +159,54 @@ body{
         }
     }
 }
+
+//recherche
+#recherche{
+    background-color: $rouge;
+    color : $blanc;
+    padding: 15px 5px;
+    .block-s{
+        padding: 0 10px;
+        float: left;
+        width : 100%;
+    }
+    .search-caption{
+        margin-bottom: 15px;
+        i{
+            font-size: 22px;
+            padding-right: 7px;
+        }
+        span{
+            text-transform: uppercase;
+            font-size: 18px;
+            font-family: "robotobold";
+        }
+    }
+    .search-input{
+        margin-bottom: 15px;
+        input{
+            border: none;
+            border-radius : 3px;
+            width : 100%;
+            height: 40px;
+            color : $noir;
+            padding: 0 10px;
+        }
+    }
+    .search-btn{
+        text-align: right;
+        .boutton{
+            height: 40px;
+            background-color: $grenat;
+            border-radius : 3px;
+            width: 143px;
+            border : none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: "robotobold";
+            &:hover{
+                background-color: $grenat-hover ;
+            }
+        }
+    }
+}
