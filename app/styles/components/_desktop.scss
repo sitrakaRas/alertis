@@ -1,3 +1,95 @@
+#header {
+    background-color: $gris-header;
+    .container-fluid {
+        .navbar-header {
+            float: left;
+            .navbar-brand {
+                margin-left: -10px;
+            }
+        }
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    .header-search {
+        float: right;
+    }
+    .navbar-collapse {
+        padding-top: 13px;
+    }
+    .header-search {
+        background-color: transparent;
+        margin-bottom: 10px;
+        li {
+            display: inline-block;
+            .input-group {
+                margin-top: 0;
+                margin-bottom: 0;
+                .form-control {
+                    width: 0px;
+                    padding: 0;
+                    height: 30px;
+                    line-height: 30px;
+                }
+                .input-group-addon {
+                    border: 0 none;
+                    color: $gris-sombre;  
+                }
+            }
+        }
+    }
+    .navbar-nav {
+        &.nav-mobile {
+            margin-top: 7.5px;
+        }
+        & > li {
+            margin-right: 4px;
+            & > a {
+                font-family: 'robotoregular';
+                font-size: 12px;
+                border: 0 none;
+                display: inline-block;
+                text-transform: inherit;
+                line-height: initial;
+                padding: 0 10px;
+                margin: 0;
+                min-height: 42px;
+                & > span {
+                    font-size: 15px;
+                    line-height: initial;
+                    display: block;
+                    & > .fa-angle-down {
+                        display: inline-block;
+                        font-size: 10px;
+                        margin-left: 5px;
+                    }
+                }
+                &:hover, &:focus, &:active, &.active {
+                    background-color: $rouge-txt;
+                }
+            }
+            &:last-child {
+                vertical-align: middle;
+                a {
+                    padding: 0 15px;
+                    background-color: $grenat;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    min-height: 42px;
+                    line-height: 42px;
+                    &:hover, &:focus, &:active, &.active {
+                        background-color: $rouge-txt;
+                    }
+                }
+            }
+            .dropdown-menu {
+                background-color: $gris-menu;
+            }
+        }
+    }
+}
+
 #formation{
     .grid-formation{
         .first-box{

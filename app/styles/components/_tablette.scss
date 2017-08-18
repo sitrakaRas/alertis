@@ -1,3 +1,15 @@
+#header {
+    .navbar-header {
+        float: none;
+        .navbar-brand {
+            margin-left: 0;
+        }
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
+
 .section-part{
     h2,.titre-section{
         font-size: 25px;

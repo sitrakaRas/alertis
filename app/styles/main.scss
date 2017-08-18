@@ -1,13 +1,16 @@
 $icon-font-path: 'fonts/';
+
+@import 'bower_components/font-awesome/scss/_variables.scss';
 @import "components/variable";
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bower_components/font-awesome/scss/font-awesome.scss";
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bower_components/font-awesome/scss/font-awesome.scss';
 // endbower
 
 @import "components/fonts";
 @import "components/base";
+@import "components/header";
 
 .browserupgrade {
   margin: 0.2em 0;
