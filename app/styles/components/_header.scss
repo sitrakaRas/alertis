@@ -12,14 +12,28 @@
 		margin-bottom: 0;
 	}
 	.navbar-header {
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-bottom: 13px;
+		padding: 10px 10px 7px;
 		background-color: $gris-header;
 		.navbar-toggle {
 			padding: 0;
-			margin: 0;
-			margin-top: 14px;
+			margin: 14px 8px 0 0;
+			.fa-bars {
+				width: 33px;
+				height: 36px;
+				overflow: hidden;
+				background: url('images/croix.png') no-repeat center center;
+				&:before {
+					display: none;
+				}
+			}
+			&.collapsed {
+				.fa-bars {
+					background: none;
+					&:before {
+						display: inline-block;
+					}
+				}
+			}
 		}
 		.fa-bars {
 			font-size: 35px;
@@ -33,6 +47,11 @@
 	}
 	.navbar-collapse {
 		padding: 0 10px;
+		position: absolute;
+		z-index: 1;
+		left: 10px;
+		right: 10px;
+		background-color: #e6332a;
 	}
 	.header-search {
 		background-color: $rouge;
@@ -54,9 +73,11 @@
 				font-size: 12px;
 			}
 			.input-group {
-				margin-top: 12px;
-				margin-bottom: 10px;
-				.form-control {
+				margin-top: 14px;
+				margin-bottom: 16px;
+                display: table;
+                width: 100%;
+                .form-control {
 					border-radius: 0;
 					outline: none;
 					box-shadow: none;
@@ -64,19 +85,38 @@
 					height: 39px;
 					line-height: 39px;
 				}
-				.input-group-addon {
-					border: 0 none;
+                .input-group-addon {
+                	border: 0 none;
 					background-color: transparent;
 					color: $blanc;
-					cursor: pointer;  
-					font-size: 19px;   
-				}
-			}
+					cursor: pointer; 
+                    font-size: 35px;
+                    padding: 0;
+                    width: 67px;
+                    padding-left: 11px;
+                }
+            }
 		}
 	}
 	.navbar-nav {
 		&.nav-mobile {
             margin-top: 0;
+            padding-bottom: 30px;
+            .dropdown {
+                .fa-angle-down {
+                    float: right;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    font-size: 30px;
+                }
+                &.open {
+                	.fa-angle-down {
+                		&:before {
+                			content: '\f106';
+                		}
+                	}
+                }
+            }
         }
 		& > li {
 			vertical-align: middle;
@@ -141,7 +181,7 @@
 	border-top: 1px solid rgba(255,255,255,0.3);
 	.plan-site {
 		margin: 0;
-		padding-top: 10px;
+		padding-top: 12px;
 		padding-left: 0;
 		li {
 			padding-top: 3px;
@@ -190,7 +230,7 @@
             border : none;
             width: 100%;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 11px;
             font-family: "robotobold";
             &:hover{
                 background-color: $grenat-hover ;
