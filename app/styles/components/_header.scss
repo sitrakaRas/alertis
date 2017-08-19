@@ -1,0 +1,240 @@
+#header {
+	background-color: $rouge;
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+		@media (min-width: 768px) and (max-width: 992px) {
+			width: 100%;
+		}
+	}
+	nav.navbar {
+		border: 0 none;
+		margin-bottom: 0;
+	}
+	.navbar-header {
+		padding: 10px 10px 7px;
+		background-color: $gris-header;
+		.navbar-toggle {
+			padding: 0;
+			margin: 14px 8px 0 0;
+			.fa-bars {
+				width: 33px;
+				height: 36px;
+				overflow: hidden;
+				background: url('images/croix.png') no-repeat center center;
+				&:before {
+					display: none;
+				}
+			}
+			&.collapsed {
+				.fa-bars {
+					background: none;
+					&:before {
+						display: inline-block;
+					}
+				}
+			}
+		}
+		.fa-bars {
+			font-size: 35px;
+			color: $rouge-txt;
+		}
+		.navbar-brand {
+			padding: 2px 0;
+			height: auto;
+			line-height: auto;
+		}
+	}
+	.navbar-collapse {
+		padding: 0 10px;
+		position: absolute;
+		z-index: 1;
+		left: 10px;
+		right: 10px;
+		background-color: #e6332a;
+	}
+	.header-search {
+		background-color: $rouge;
+		margin-bottom: 0;
+		padding-left: 0;
+		li {
+			list-style-type: none;
+			display: block;
+			min-height: 30px;
+			line-height: 30px;
+			&:first-child {
+				padding-left: 10px;
+				padding-right: 10px;
+				border-right: 1px solid $gris-sombre;
+			}
+			& > a {
+				text-transform: uppercase;
+				color: $gris-sombre;
+				font-size: 12px;
+			}
+			.input-group {
+				margin-top: 14px;
+				margin-bottom: 16px;
+                display: table;
+                width: 100%;
+                .form-control {
+					border-radius: 0;
+					outline: none;
+					box-shadow: none;
+					border: 0 none;
+					height: 39px;
+					line-height: 39px;
+				}
+                .input-group-addon {
+                	border: 0 none;
+					background-color: transparent;
+					color: $blanc;
+					cursor: pointer; 
+                    font-size: 35px;
+                    padding: 0;
+                    width: 67px;
+                    padding-left: 11px;
+                }
+            }
+		}
+	}
+	.navbar-nav {
+		&.nav-mobile {
+            margin-top: 0;
+            padding-bottom: 30px;
+            .dropdown {
+                .fa-angle-down {
+                    float: right;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    font-size: 30px;
+                }
+                &.open {
+                	.fa-angle-down {
+                		&:before {
+                			content: '\f106';
+                		}
+                	}
+                }
+            }
+        }
+		& > li {
+			vertical-align: middle;
+			& > a {
+				font-family: 'robotolight';
+				background-color: $rouge;
+				font-size: 20px;
+				padding: 0 8px;
+				display: block;
+				color: $blanc;
+				text-transform: uppercase;
+				border-top: 1px solid rgba(255,255,255,0.3);
+                padding: 0;
+                margin: 0 10px;
+				min-height: 52px;
+				line-height: 52px;
+				& > span {
+					font-family: 'robotobold';
+					display: inline-block;
+					text-transform: uppercase;
+					& > .fa-angle-down {
+						display: none;
+						font-size: 30px;
+						line-height: 15px;
+					}
+				}
+			}
+			.dropdown-menu {
+				background-color: $rouge;
+				li {
+					a {
+						&:hover {
+							background-color: transparent;
+							color: $rouge-txt;
+							&:before {
+								content: '\f061';
+								margin-right: 5px;
+								display: inline-block;
+								font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
+								font-size: inherit; // can't have font-size inherit on line above, so need to override
+								text-rendering: auto; // optimizelegibility throws things off #1094
+								-webkit-font-smoothing: antialiased;
+								-moz-osx-font-smoothing: grayscale;
+							}
+						}
+					}
+				}
+			}
+		}
+		.open {
+			.dropdown-menu {
+				& > li {
+					& > a {
+						padding: 5px 10px,
+					}
+				}
+			}
+		}
+	}
+}
+.wrapper-last {
+	border-top: 1px solid rgba(255,255,255,0.3);
+	.plan-site {
+		margin: 0;
+		padding-top: 12px;
+		padding-left: 0;
+		li {
+			padding-top: 3px;
+			padding-bottom: 3px;
+			list-style-type: none;
+			a {
+				color: $blanc;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+#newsletter{
+    background-color: $rouge;
+    color : $blanc;
+    padding: 10px 0;
+    .block-s{
+        padding: 0;
+    }
+    .search-caption{
+    	margin-bottom: 5px;
+        span{
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+    .search-input{
+    	padding: 0;
+        input{
+            border: none;
+            border-radius: 3px;
+            width : 100%;
+            height: 40px;
+            color : $noir;
+            padding: 0 10px;
+        }
+    }
+    .search-btn{
+        text-align: right;
+		padding-left: 10px;
+        .boutton{
+            height: 40px;
+            background-color: $grenat;
+            border-radius : 3px;
+            border : none;
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-family: "robotobold";
+            &:hover{
+                background-color: $grenat-hover ;
+            }
+        }
+    }
+}

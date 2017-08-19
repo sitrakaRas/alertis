@@ -1,3 +1,124 @@
+#header {
+    background-color: $gris-header;
+    .container-fluid {
+        .navbar-header {
+            float: left;
+            .navbar-brand {
+                margin-left: -10px;
+            }
+        }
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    .header-search {
+        float: right;
+    }
+    .navbar-collapse {
+        padding-top: 13px;
+        position: relative;
+        background-color: transparent;
+    }
+    .header-search {
+        background-color: transparent;
+        margin-bottom: 10px;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            .input-group {
+                display: inline-table;
+                margin-top: 0;
+                margin-bottom: 0;
+                .form-control {
+                    width: 0px;
+                    height: 30px;
+                    padding: 0;
+                    line-height: 30px;
+                    transition: width 300ms ease;
+                }
+                .input-group-addon {
+                    border: 0 none;
+                    color: $gris-sombre;  
+                    font-size: 19px;
+                    width: 40px;
+                    padding-left: 0;
+                }
+                &:hover {
+                    .form-control {
+                        margin-left: 10px;
+                        width: 174px;
+                        padding: 0 10px;
+                        transition: width 300ms ease;
+                    }    
+                }
+            }
+        }
+    }
+    .navbar-nav {
+        &.nav-mobile {
+            margin-top: 7.5px;            
+        }
+        & > li {
+            margin-right: 4px;
+            & > a {
+                font-family: 'robotoregular';
+                font-size: 12px;
+                border: 0 none;
+                display: inline-block;
+                text-transform: inherit;
+                line-height: initial;
+                padding: 2px 10px;
+                margin: 0;
+                min-height: 42px;
+                & > span {
+                    font-size: 15px;
+                    line-height: initial;
+                    display: block;
+                    & > .fa-angle-down {
+                        display: inline-block;
+                        font-size: 10px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            &:hover, &:focus, &:active, &.active {
+                & > a {
+                    background-color: $rouge-txt;
+                }
+            }
+            &:last-child {
+                vertical-align: middle;
+                a {
+                    padding: 0 15px;
+                    background-color: $grenat;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    min-height: 42px;
+                    line-height: 42px;
+                    &:hover, &:focus, &:active, &.active {
+                        background-color: $rouge-txt;
+                    }
+                }
+            }
+            .dropdown-menu {
+                background-color: $gris-menu;
+                box-shadow: none;
+                border: 0 none;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+#newsletter{
+    .search-btn{
+        .boutton{
+            font-size: 14px;
+        }
+    }
+}
+
 #formation{
     .grid-formation{
         .first-box{
