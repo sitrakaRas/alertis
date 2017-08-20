@@ -3,6 +3,7 @@
     .container-fluid {
         .navbar-header {
             float: left;
+            padding-top: 4px;
             .navbar-brand {
                 margin-left: -10px;
             }
@@ -96,6 +97,7 @@
                     text-transform: uppercase;
                     min-height: 42px;
                     line-height: 42px;
+                    margin-right: 0;
                     &:hover, &:focus, &:active, &.active {
                         background-color: $rouge-txt;
                     }
@@ -106,6 +108,8 @@
                 box-shadow: none;
                 border: 0 none;
                 border-radius: 0;
+                padding-left: 5px;
+                padding-right: 5px;
             }
         }
     }
