@@ -182,3 +182,20 @@
 #confiance{
     padding-top: 20px;
 }
+// actus-dossier
+#actus-dossier{
+    .listing{
+        .list{
+            padding: 15px 35px 15px 15px;
+            &:after{
+                right: 10px;
+            }
+        }
+    }
+    .actus-block{
+        padding: 40px 25px 50px 10px;
+    }
+    .dossier-block{
+        padding: 40px 10px 50px 25px;
+    }
+}
