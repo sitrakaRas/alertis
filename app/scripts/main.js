@@ -15,12 +15,17 @@ $(document).ready(function() {
 
     $('.nav > li').find('.dropdown-menu').parent('li').addClass('dropdown');
 	$( window ).on('resize', function() {
-	  	if ($(window).width() >= 992) {
-	  		$('.nav li.dropdown').hover(function() {
-			  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-			}, function() {
-			  	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+	  	if ($(window).outerWidth() > 1024) {
+			console.log('on');
+			$('.nav li.dropdown').on('mouseenter', function() {
+			  	$(this).addClass('open');
 			});
+			$('.nav li.dropdown').on('mouseleave', function() {
+			  	$(this).removeClass('open');
+			});
+		} else {
+			console.log('off');
+			$('.nav li.dropdown').off('mouseenter mouseleave');
 		}
 	});
 	$(window).trigger('resize');
