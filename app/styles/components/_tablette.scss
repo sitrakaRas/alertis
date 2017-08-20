@@ -284,7 +284,93 @@
             font-family: "robotobold";
             text-decoration: none;
             border-radius: 3px;
+            &:hover{
+                background-color: $grenat-hover;
+            }
         }
         
+    }
+}
+
+// block-contact
+#block-contact{
+    color : $blanc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 50px 0 35px;
+    .filter{
+        background-color: rgba(230,51,42,0.86);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .titre-section{
+        text-align: center;
+        font-size: 30px;
+        font-family: "robotolight";
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+    .form-group{
+        margin-bottom: 10px;
+        @include clearfix();
+        .input-label{
+            font-family: "robotobold";
+            font-size: 16px;
+            font-weight: 400;
+            display: inline-block;
+            text-transform: uppercase;
+            line-height: 40px;
+            float: left;
+        }
+        .input-form{
+            width : 275px;
+            float: right;
+            .form-control{
+                width: 100%;
+                height: 40px;
+                color : $noir;
+                border : none;
+                box-shadow: none;
+                border-radius : 3px;
+            }
+            &.right-col{
+                width : 260px;
+            }
+
+            textarea{
+                width : 100%;
+                border-radius : 3px;
+                border : none;
+                height: 145px;
+                margin-bottom: 10px;
+                color : $noir;
+                padding: 10px;
+            }
+        }
+    }
+    .btn-send{
+        width : 170px;
+        text-transform: uppercase;
+        background-color: $grenat;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        float: right;
+        color : $blanc;
+        font-family: "robotobold";
+        text-decoration: none;
+        border-radius: 3px;
+        border : none;
+        &:hover{
+            background-color: $grenat-hover;
+        }
     }
 }

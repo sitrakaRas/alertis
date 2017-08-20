@@ -199,3 +199,18 @@
         padding: 40px 10px 50px 25px;
     }
 }
+
+// block-contact
+#block-contact{
+    .form-group{
+        .input-form{
+            width : 305px;
+            &.right-col{
+                width : 290px;
+            }
+        }
+    }
+    .btn-send{
+        width : 145px;
+    }
+}
