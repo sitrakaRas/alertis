@@ -214,3 +214,57 @@
         width : 145px;
     }
 }
+
+#footer{
+    padding: 35px 0 10px;
+    .f-block{
+        text-align: left;
+        ul{
+            li{
+                padding-bottom: 15px;
+                a{
+                    font-size: 14px;
+                    color : $blanc;
+
+                    p{
+                        display: block;
+                        line-height: 1.2;
+                    }
+                }
+            }        
+        }
+        .plan-site{
+              li{
+                  padding-bottom: 0;
+                  a{
+                      display: block;
+                      line-height: 1.2;
+                  }
+              }  
+        }  
+
+        .newsletter-form{
+            margin-top: -10px;
+            .form-control{
+                background-color: #706f6f;
+                font-size: 12px;
+                height: 40px;
+                border : none;
+                box-shadow: none;
+                border-radius : 3px;
+                margin-bottom: 10px;
+            }
+            .btn-inscrit{
+                text-transform: uppercase;
+                background-color: $orange;
+                height: 30px;
+                border-radius: 3px;
+                border : none;
+                color : $blanc;
+                font-family: "robotobold";
+                font-size: 11px;
+                width : 105px;
+            }
+        }
+    }
+}

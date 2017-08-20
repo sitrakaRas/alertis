@@ -243,7 +243,7 @@
                 top : 50%;
                 transform : translateY(-50%);
                 color : $violet-fleche;
-                font-size: 23px;
+                font-size: 24px;
             }
             &:hover{
                 background-color: rgba(255,255,255,0.25);
@@ -371,6 +371,46 @@
         border : none;
         &:hover{
             background-color: $grenat-hover;
+        }
+    }
+}
+
+// footer
+footer{
+    background-color: $gris-footer;
+}
+#footer{
+    padding: 15px 0 10px;
+    .f-block{
+        text-align: center;
+        .f-titre{
+            font-size: 16px;
+            text-transform: uppercase;
+            color : $blanc;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+        ul{
+            padding-left: 0;
+            list-style: none;
+            li{
+                padding-bottom: 15px;
+                a{
+                    font-size: 14px;
+                    color : $blanc;
+                    text-decoration: none;
+                    p{
+                        display: inline;
+                        font-family: 'robotolight';
+                        margin-bottom: 0;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                        color : $orange-link;
+                    }
+                }
+            }
+            
         }
     }
 }
