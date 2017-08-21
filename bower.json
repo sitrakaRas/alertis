@@ -19,8 +19,8 @@
     "slick-carousel": {
       "main": [
         "slick/slick.js",
-        "slick/slick.css",
-        "slick/slick-theme.css",
+        "slick/slick.scss",
+        "slick/slick-theme.scss",
         "slick/fonts/*",
         "slick/ajax-loader.gif"
       ]

@@ -268,3 +268,16 @@
         }
     }
 }
+
+// slider-top
+#slider-top{
+    .slider-ctnr{
+        .control{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform : translate(-50%,-50%);
+            
+        }
+    }
+}     

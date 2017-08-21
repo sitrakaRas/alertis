@@ -414,3 +414,81 @@ footer{
         }
     }
 }
+
+// slider-top
+#slider-top{
+    .slider-ctnr{
+        position: relative;
+        .items{
+            height: 510px;
+            .item{
+                height: 510px;
+                width : 100%;
+                background-size: cover;
+                background-position: center center;
+                position: absolute;
+                opacity : 0;
+                @include transition(opacity 0.5s ease-out);
+                &.active{
+                    opacity : 1;
+                    @include transition(opacity 0.5s ease-out);
+                }
+            }
+        }
+        .control{
+            position: absolute;
+            top: 50%;
+            transform : translateY(-50%);
+            ul{
+                padding-left: 0;
+                list-style: none;
+                margin-top: 0;
+                margin-bottom: 0;
+                li{
+                    padding: 5px 0;
+                    a{
+                        background-color: rgba(0,0,0,0.61);
+                        width: 210px;
+                        padding: 25px 15px;
+                        display: block;
+                        color : $blanc;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        position: relative;
+                        p{
+                            font-family: "robotolight";
+                            font-size: 16px;
+                            line-height: 1.2;
+                            margin-bottom: 0;
+                            strong{
+                                display: block;
+                                font-family: "robotobold";
+                                font-size: 18px;
+                                font-weight: 400;
+                            }
+                        }
+                        &:hover{
+                            background-color: rgba(0,0,0,1);
+                        }
+                        &.active{
+                            background-color: $orange;
+                            &:after{
+                                left: 100%;
+                                top: 50%;
+                                border: solid transparent;
+                                content: " ";
+                                height: 0;
+                                width: 0;
+                                position: absolute;
+                                border-color: transparent;
+                                border-left-color: $orange;
+                                border-width: 10px 0 10px 15px;
+                                margin-top: -10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}     
