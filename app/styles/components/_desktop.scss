@@ -300,3 +300,29 @@
 .h1-titre{
     margin-bottom: 35px;
 }
+
+// catalogue-list
+#catalogue-list{
+    padding: 40px 0 0 0;
+    .accordion{
+        padding: 0 10px;
+        ul{
+            li{
+                .content{
+                    table{
+                        width : 960px;
+                        tr{
+                            td{
+                                &:nth-child(2){
+                                    border-left : 20px solid $blanc;
+                                    border-right : 20px solid $blanc;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

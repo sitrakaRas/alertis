@@ -599,3 +599,137 @@ footer{
     margin-bottom: 25px;
     margin-top: 0px;
 }
+
+// catalogue-list
+#catalogue-list{
+    padding: 20px 0 0 0;
+    .accordion{
+        padding: 0 10px;
+        ul{
+            li{
+                label{
+                    display:inline-block;
+                    height: 38px;
+                    line-height: 38px;
+                    padding: 0px 20px;
+                    margin-bottom: 25px;
+                    border-bottom: none;
+                    pointer-events: none;
+                    &:after{
+                        content : "";
+                        width: 0; 
+                        height: 0; 
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent; 
+                        left : 30px;
+                        right: auto;
+                        top : 100%;
+                        margin-top: 5px; 
+                    }
+                    &.red{
+                        &:after{                                                
+                            border-top: 10px solid #e30613;                           
+                        }
+                        & + .content{
+                            td{
+                                &:nth-child(3){
+                                    .link{
+                                        background-color: #e30613;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                    &.green{
+                        &:after{                       
+                            border-top: 10px solid #82b937;
+                        }
+                        & + .content{
+                            td{
+                                &:nth-child(3){
+                                    .link{
+                                        background-color: #82b937;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                    &.orange{
+                        &:after{                       
+                            border-top: 10px solid #e94e1b;
+                        }
+                        & + .content{
+                            td{
+                                &:nth-child(3){
+                                    .link{
+                                        background-color: #e94e1b;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                    &.yellow{
+                        &:after{                       
+                            border-top: 10px solid #fcc11e;
+                        }
+                        & + .content{
+                            td{
+                                &:nth-child(3){
+                                    .link{
+                                        background-color: #fcc11e;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                .content{
+                    margin-bottom: 30px;
+                    height:100%;
+                    table{
+                        width : 748px;
+                        tr{
+                            border-bottom : 10px solid $blanc;
+                            td{
+                                &:nth-child(2){
+                                    border-left : 20px solid $blanc;
+                                }
+                                &:nth-child(3){
+                                    width : 60px;
+                                    .link{
+                                        width : 60px;
+                                        height: 60px;
+                                        text-align: center;
+                                        a{
+                                            color : $blanc;
+                                            line-height: 60px;
+                                            font-size: 25px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+
+                [type=checkbox]{
+                    &:checked{
+                        & ~ label{
+                            &:after{
+                                content : "";
+                            }
+                            & ~ .content{
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
