@@ -46,5 +46,25 @@ $(document).ready(function() {
 	$(window).trigger('resize');
 
 	//topSlider
-	alertis.topSlider($('#slider-top'));
+	if($('#slider-top').length > 0){
+		alertis.topSlider($('#slider-top'));
+	}
+	//slider-formation
+	if($(".slider-formation").length > 0){
+		var arg = {
+			 slidesToShow: 1,
+			 dots : true,
+			 arrows : true,
+			 responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						arrows: false,
+					}
+				}
+			]
+		};
+
+		alertis.slider($(".slider-formation"), arg);
+	}
 });
