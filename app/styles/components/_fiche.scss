@@ -3,3 +3,184 @@
 		margin-bottom: 12px;
 	}
 }
+// detail-fiche
+#detail-fiche{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    .accordion{
+        &> ul{
+            list-style:none;
+            margin:0;
+            padding:0; 
+            &> li{
+                margin:0;
+                padding:29px 0;
+                &:first-child {
+                	padding-top: 0;
+                }
+                &:nth-child(2n+1) {
+                	background-color: #F4F4F4; 
+                }
+                label{
+                    display:block;
+                    height: 65px;
+                    padding: 24px 0;
+                    min-width: 186px; 
+                    text-transform: uppercase;
+                    color : $blanc;
+                    font-size: 16px;
+                    font-family: "robotobold";
+                    font-weight: 400;
+                    line-height: 1.2;
+                    text-align: center;
+                    position : relative;
+                    margin-bottom: 0;
+                    border-bottom: 1px solid $blanc;
+                    background-color : #e94e1b;
+                    &:after{
+                        content : "\f107";
+                        font-family: "FontAwesome";
+                        position : absolute;
+                        top : 50%;
+                        transform : translateY(-50%);
+                        right: 10px;
+                        font-size: 25px;
+                    }
+                }
+                .content{
+                    overflow: hidden;
+                    height:0px;
+                    border-top:0;
+                    margin-bottom: 1px;
+                }
+
+                [type=checkbox]{
+                    display:none;
+                    &:checked{
+                        & ~ label{
+                            &:after{
+                                content : "\f106";
+                            }
+                            & ~ .content{
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #presentation {
+        	position: relative;
+        	.fond-blanc {
+        		position: absolute;
+        		left: 0;
+        		right: 0;
+        		top: 0;
+        		height: 38px;
+        		background-color: $blanc; 
+        	}
+        	ul {
+        		display: inline-block;
+        		padding: 0;
+        		position: relative;
+        		z-index: 1;
+        		li {
+        			list-style:none;
+		            margin: 0;
+		            padding: 0; 
+		            display: inline-block;
+		            a {
+		            	margin:0 3px;
+			            padding:6px 0; 
+			            display: inline-block;
+			            text-align: center;
+			            color: $violet-fleche;
+			            font-size: 16px;
+			            text-transform: uppercase;
+			            font-family: 'robotobold'; 
+			            border-bottom: 2px solid $violet-fleche;
+			            min-width: 184px; 
+		            }
+        		}
+        	}
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+  	// detail-fiche
+	#detail-fiche{
+	    padding: 20px 0 0 0;
+	    .accordion{
+	        padding: 0 10px;
+	        &> ul{
+	            li{
+	                label{
+	                    display:inline-block;
+	                    height: 38px;
+	                    line-height: 38px;
+	                    padding: 0px 20px;
+	                    margin-bottom: 25px;
+	                    border-bottom: none;
+	                    pointer-events: none;
+	                    &:after{
+	                        content : "";
+	                        width: 0; 
+	                        height: 0; 
+	                        border-left: 10px solid transparent;
+	                        border-right: 10px solid transparent; 
+	                        left : 30px;
+	                        right: auto;
+	                        top : 100%;
+	                        margin-top: 5px; 
+	                        border-top: 10px solid #e94e1b;
+	                    }
+                        & + .content{
+                            td{
+                                &:nth-child(3){
+                                    .link{
+                                        background-color: #e94e1b;
+                                    }
+                                }
+                                
+                            }
+                        }
+	                }
+	                .content{
+	                    margin-bottom: 30px;
+	                    height:100%;
+	                }
+
+	                [type=checkbox]{
+	                    &:checked{
+	                        & ~ label{
+	                            &:after{
+	                                content : "";
+	                            }
+	                            & ~ .content{
+	                                height: 100%;
+	                            }
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+}
+
+@media only screen and (min-width:992px){
+	// detail-fiche
+	#detail-fiche{
+	    padding: 40px 0 0 0;
+	    .accordion{
+	        padding: 0 10px;
+	        &> ul{
+	            li{
+	                .content{
+	                }
+	            }
+	        }
+	    }
+	}
+}
