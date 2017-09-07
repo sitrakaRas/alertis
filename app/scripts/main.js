@@ -50,7 +50,7 @@ $(document).ready(function() {
 		alertis.topSlider($('#slider-top'));
 	}
 	//slider-formation
-	if($(".slider-formation").length > 0){
+	if($('.slider-formation').length > 0){
 		var arg = {
 			 slidesToShow: 1,
 			 dots : true,
@@ -65,6 +65,6 @@ $(document).ready(function() {
 			]
 		};
 
-		alertis.slider($(".slider-formation"), arg);
+		alertis.slider($('.slider-formation'), arg);
 	}
 });
