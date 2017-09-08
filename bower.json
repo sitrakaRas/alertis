@@ -6,7 +6,8 @@
     "modernizr": "~2.8.1",
     "slick-carousel": "^1.6.0",
     "font-awesome": "font-awsome#^4.7.0",
-    "ScrollToFixed": "^1.0.8"
+    "ScrollToFixed": "^1.0.8",
+    "chart.js": "^2.6.0"
   },
   "overrides": {
     "bootstrap-sass": {

@@ -20,6 +20,38 @@ var alertis = {
 }
 
 $(document).ready(function() {
+	
+
+	function displayChart(elem, displayText) {
+		var options = {
+			cutoutPercentage : 70,
+			responsive: true,
+		    legend: {
+		      	display: false
+		    },
+		    tooltips: {
+		      	enabled: false
+		    }
+		}
+	    var data1 = {
+		    datasets: [{
+		        data: [displayText, 100-displayText],
+		        backgroundColor: [ "#e94e1b", "#c6c6c6" ],
+		        borderWidth: [0, 0]
+		    }],
+		    labels: ['blue', 'red']
+		};
+
+		var chart = new Chart($(elem), {
+			type: 'doughnut',
+			data: data1,
+			options: options
+		});
+	}
+
+	displayChart('#chart1', '40');
+	displayChart('#chart2', '60');
+
     if($('.slider-confiance').length > 0){
         var arg = {
             variableWidth: true

@@ -291,7 +291,7 @@
           <article>
             <div class="col-md-4">
               <img src="images/actus/main.jpg" class="main-img center-block img-responsive" alt="article">
-              <div class="row">
+              <div class="row hidden-xs">
                 <div class="col-md-6">
                   <img src="images/actus/actus-side-1.jpg" class="center-block img-responsive" alt="article">
                 </div>
@@ -337,7 +337,7 @@
                     <div class="container">
                       <input type="checkbox" id="cat-1" name="cat-1" />
                       <label for="cat-1">Présentation</label>
-                      <ul class="hidden-xs">
+                      <ul class="section-target hidden-xs">
                         <li><a href="#programme">Programme</a></li>
                         <li><a href="#organisation">organisation</a></li>
                         <li><a href="#recyclage">recyclage</a></li>
@@ -346,6 +346,14 @@
                       <div class="content">
                         <div class="row">
                           <div class="col-sm-6">
+                          <div class="custom-block bg-blanc">
+                            <h2>compétences développées</h2>
+                            <ul> 
+                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</li>
+                              <li>Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</li>
+                              <li>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.</li> 
+                            </ul>
+                          </div>
                             <h2>Validation</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
                             <h2>Formateurs</h2>
@@ -379,7 +387,60 @@
                     <input type="checkbox" id="cat-2" name="cat-2" />
                     <label for="cat-2">Programme</label>
                     <div class="content">
-                    programme
+                      <div class="custom-block bg-gris">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. 
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="custom-title">
+                          <div class="chart-label">
+                              <span>40%</span> 
+                          </div>
+                          <canvas id="chart1" height="93" width="93"></canvas>
+                        </div>
+                        <h2>Partie théorique <span><i class="fa fa-clock-o"></i> 45mn</span></h2>
+                        <p>
+                          <strong style="font-size: 16px;">Prévention des incendie dans les établissements</strong><br />
+                          - Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendu<br />
+                          - Maugue. Praesent egestas leo in pede. Praesent blandit odio eu enim.<br />
+                          - Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum<br />
+                             primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <p>
+                          <strong style="font-size: 16px;">Naissance et développement d’un incendie</strong><br />
+                          - Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendu<br />
+                          - Maugue. Praesent egestas leo in pede. Praesent blandit odio eu enim.<br />
+                          - Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum<br />
+                             primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <p>
+                          <strong style="font-size: 16px;">Les moyens de secours</strong><br />
+                          - Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendu<br />
+                          - Maugue. Praesent egestas leo in pede. Praesent blandit odio eu enim.<br />
+                          - Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum<br />
+                             primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="custom-title">
+                          <div class="chart-label">
+                              <span>60%</span> 
+                          </div>
+                          <canvas id="chart2" height="93" width="93"></canvas>
+                        </div>
+                        <h2>Partie pratique <span><i class="fa fa-clock-o"></i> 1h15</span></h2>
+                        <p>
+                          <strong style="font-size: 16px;">Exercice d’exctinction sur feu réel</strong><br />
+                          - Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendu<br />
+                          - Maugue. Praesent egestas leo in pede. Praesent blandit odio eu enim.<br />
+                          - Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum<br />
+                             primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                        </p>
+                        <p>
+                          <strong style="font-size: 16px;">Repérage de tous les organes de sécurité de l’établissement</strong><br />
+                          - Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendu<br />
+                          - Maugue. Praesent egestas leo in pede. Praesent blandit odio eu enim.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </li>
@@ -403,8 +464,8 @@
                               - Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendu
                             </p>
                             <div class="row">
-                              <div class="col-sm-6"></div>
-                              <div class="col-sm-6"></div>
+                              <div class="col-sm-6"><img src="images/actus/img1.jpg" alt=""></div>
+                              <div class="col-sm-6"><img src="images/actus/img1.jpg" alt=""></div>
                             </div>
                           </div>
                           <div class="col-sm-6">
@@ -450,7 +511,27 @@
                       <input type="checkbox" id="cat-5" name="cat-5" />
                       <label for="cat-5">Reglementation</label>
                       <div class="content">
-                      reglementation
+                        <div class="custom-block bg-blanc">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. 
+                        </div>
+                        <div class="col-sm-6">
+                          <p>
+                            <strong style="font-size: 16px;">Code du travail</strong><br />
+                            - article R.6548.28<br />
+                            IR-C-4204624-4
+                          </p>
+                          <p>
+                            <strong style="font-size: 16px;">Arrêtés du 25 juin 1980</strong><br />
+                            - Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendu<br />
+                            - Maugue. Praesent egestas leo in pede. Praesent blandit odio eu enim.
+                          </p>
+                        </div>
+                        <div class="col-sm-6">
+                          <p> 
+                            <strong style="font-size: 16px;">Code des assurances</strong>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. 
+                          </p>
+                        </div>
                       </div>
                     </div>
                 </li>
@@ -464,29 +545,29 @@
     </section>
     <!-- ./detail-fiche-->
     <!--faq-->
-    <section id="faq">
+    <section id="liens">
       <div class="container">
-        <div class="wysiwyg">
+        <div class="contenu-liens">
           <h2>TOUTES LES FORMATIONS INCENDIE</h2>
           <ul>
-            <li>Formation extincteur</li>
-            <li>Formation Equipier Première Intervention</li>
-            <li>Formation Incendie Maison Retraite EHPAD</li>
-            <li>Formation Incendie Centre Commercial</li>
-            <li>Formation Incendie Hôtels</li>
-            <li>Recyclage Equipier Première Intervention</li>
-            <li>Formation Equipier Seconde Intervention</li>
-            <li>Recyclage Equipier Seconde intervention</li>
-            <li>Appareil Respiratoire Isolant</li>
-            <li>Recyclage ARI</li>
-            <li>Formation SSI Système de Sécurité Incendie</li>
-            <li>Formation ATEX</li>
-            <li>Formation responsable sécurité IPRP</li>
-            <li>Formation sécurité</li>
-            <li>Formation sécurité incendie</li>
-            <li>Audit sécurité incendie</li>
-            <li>Appareil Respiratoire Isolant</li>
-            <li>Recyclage ARI</li>
+            <li><a href="#">Formation extincteur</a></li>
+            <li><a href="#">Formation Equipier Première Intervention</a></li>
+            <li><a href="#">Formation Incendie Maison Retraite EHPAD</a></li>
+            <li><a href="#">Formation Incendie Centre Commercial</a></li>
+            <li><a href="#">Formation Incendie Hôtels</a></li>
+            <li><a href="#">Recyclage Equipier Première Intervention</a></li>
+            <li><a href="#">Formation Equipier Seconde Intervention</a></li>
+            <li><a href="#">Recyclage Equipier Seconde intervention</a></li>
+            <li><a href="#">Appareil Respiratoire Isolant</a></li>
+            <li><a href="#">Recyclage ARI</a></li>
+            <li><a href="#">Formation SSI Système de Sécurité Incendie</a></li>
+            <li><a href="#">Formation ATEX</a></li>
+            <li><a href="#">Formation responsable sécurité IPRP</a></li>
+            <li><a href="#">Formation sécurité</a></li>
+            <li><a href="#">Formation sécurité incendie</a></li>
+            <li><a href="#">Audit sécurité incendie</a></li>
+            <li><a href="#">Appareil Respiratoire Isolant</a></li>
+            <li><a href="#">Recyclage ARI</a></li>
           </ul>
         </div>
       </div>
@@ -700,6 +781,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <script src="/bower_components/ScrollToFixed/jquery-scrolltofixed.js"></script>
+    <script src="/bower_components/chart.js/dist/Chart.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
