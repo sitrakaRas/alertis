@@ -26,6 +26,14 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=877762995572026";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <!-- header -->
     <header id="header">
       <div class="container">
@@ -289,24 +297,31 @@
         <h1 class="h1-titre">FORMATION MANIPULATION EXTINCTEUR</h1>
         <div class="row">
           <article>
-            <div class="col-md-4">
+            <div class="col-sm-5 col-md-4">
               <img src="images/actus/main.jpg" class="main-img center-block img-responsive" alt="article">
               <div class="row hidden-xs">
-                <div class="col-md-6">
+                <div class="col-sm-6 col-md-6">
                   <img src="images/actus/actus-side-1.jpg" class="center-block img-responsive" alt="article">
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 col-md-6">
                   <img src="images/actus/actus-side-2.jpg" class="center-block img-responsive" alt="article">
                 </div>
               </div>
             </div>
-            <div class="col-md-5 rte">
+            <div class="col-sm-6 col-md-5 rte">
               <p><strong style="font-size: 16px;">La formation à la manipulation des extincteurs prépare votre personnel à être capable de réagir face à un feu naissant afin d’alerter les secours spécialisé tout en adoptant un comportement sécuritaire.</strong></p>
               <p>A la fin de notre formation à la manipulation des extincteurs, vos employés seront capable de reconnaitre la source (le combustible) et les différentes classes de feu afin de choisir l’extincteur adapt
               és à l’incendie. Notre formation incendie essentiellement orientée sur la pratique est adaptée à chaque spécificité des établissements. Tous les stagiaires participants à la formation manutention extincteurs utilisent des extincteurs sur feu réel.</p>
+              <div class="social-share"> 
+                <span class="fb-like" data-href="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></span>
+                <script src="https://apis.google.com/js/platform.js" async></script>
+                <div class="g-plus" data-action="share" data-annotation="bubble" ></div>
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweeter</a>
+                <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+              </div>
             </div>
-            <div class="col-md-3">
-              <ul class="">
+            <div class="col-sm-12 col-md-3">
+              <ul class="side-actu col-sm-8 col-md-12">
                 <li>
                   <i class="fa fa-users"></i><div><span>Public</span><span>Tous les salariés</span></div>
                 </li>
@@ -317,6 +332,10 @@
                   <i class="fa fa-map-marker"></i><div><span>Lieu</span><span>Sur notre site</span></div>
                 </li>
               </ul>
+              <div class="side-bouton col-sm-4 col-md-12">
+                <button class="btn btn-rouge btn-block"><i class="fa fa-file-text-o"></i> Demande de devis</button>
+                <button class="btn btn-rouge btn-block"><i class="fa fa-file-pdf-o"></i> Fiche formation</button>
+              </div>
             </div>
           </article>
         </div>
@@ -528,7 +547,7 @@
                         </div>
                         <div class="col-sm-6">
                           <p> 
-                            <strong style="font-size: 16px;">Code des assurances</strong>
+                            <strong style="font-size: 16px;">Code des assurances</strong><br />
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. 
                           </p>
                         </div>
@@ -548,7 +567,7 @@
     <section id="liens">
       <div class="container">
         <div class="contenu-liens">
-          <h2>TOUTES LES FORMATIONS INCENDIE</h2>
+          <h2>TOUTES LES FORMATIONS <span class="hidden-xs">INCENDIE</span></h2>
           <ul>
             <li><a href="#">Formation extincteur</a></li>
             <li><a href="#">Formation Equipier Première Intervention</a></li>
@@ -773,6 +792,24 @@
       // e.src='https://www.google-analytics.com/analytics.js';
       // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       // ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    <script async src="//assets.pinterest.com/js/pinit.js"></script>
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
     </script>
 
     <!-- build:js scripts/vendor.js -->

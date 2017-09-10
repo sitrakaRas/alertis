@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 	function displayChart(elem, displayText) {
 		var options = {
-			cutoutPercentage : 70,
+			cutoutPercentage : 75,
 			responsive: true,
 		    legend: {
 		      	display: false

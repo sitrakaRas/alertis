@@ -1,10 +1,78 @@
+// Description
 #description {
+	margin-bottom: 14px; 
     .main-img {
         margin-bottom: 12px;
     }
+    .side-actu {
+    	list-style-type: none;
+    	padding-left: 0;
+    	margin-bottom: 0;
+    	background-color: #E3DDDD;
+    	padding: 22px 18px 4px; 
+    	li {
+			clear: both;
+			overflow: hidden;
+			margin-top: 13px;
+	    	i {
+	    		color: $orange;
+	    		font-size: 26px;
+	    		vertical-align: top;
+	    		margin-top: 6px; 
+	    	}
+	    	div {
+	    		display: inline-block; 
+	    		width: calc(100% - 30px);
+	    		float: right; 
+	    		padding-left: 15px;
+	    		&> span {
+	    			display: block;
+	    			&:first-child {
+	    				font-family: "robotobold";
+	    				font-size: 16px;
+	    				text-transform: uppercase;
+	    				border-bottom: 2px solid $blanc;
+	    				padding-bottom: 2px;
+	    				&+ span {
+	    					font-size: 14px;
+	    					font-family: "robotoregular"; 
+	    					padding: 10px 0;
+	    				} 
+	    			}
+	    		}
+	    	}
+	    	&:first-child {
+	    		margin-top: 0;
+	    	}
+    	}
+    }
+    .side-bouton {
+    	padding-top: 6px;
+    	padding-left: 0;
+    	padding-right: 0; 
+    	margin-bottom: 10px;
+    	.btn-rouge {
+    		font-family: "robotobold";
+    		font-size: 16px;
+    		text-transform: uppercase;
+    		border-radius: 0;
+    		background-color: $rouge;
+    		color: $blanc;
+    		text-align: left; 
+    		padding-top: 11px;
+    		padding-bottom: 11px;
+    		i {
+    			font-size: 24px;
+    			margin-right: 10px;
+    		} 
+    	}
+    }
+    .social-share {
+    	margin-bottom: 14px;
+    }
 }
 // detail-fiche
-#detail-fiche{
+#detail-fiche {
     padding-top: 4px;
     padding-bottom: 4px;
     .accordion{
@@ -23,8 +91,8 @@
                 }
                 label{
                     display:block;
-                    height: 65px;
-                    padding: 24px 0 24px 15px;
+                    height: 50px;
+                    padding: 14px 0 14px 15px;
                     min-width: 186px; 
                     text-transform: uppercase;
                     color : $blanc;
@@ -46,23 +114,31 @@
                         font-size: 25px;
                     }
                 }
+                .container {
+                	padding-left: 0;
+                	padding-right: 0;
+                }
                 .content{
                     overflow: hidden;
                     height:0px;
                     border-top:0;
+                    padding-left: 10px;
+                    padding-right: 10px;
                     margin-bottom: 1px;
                     h2 {
                         font-family: 'robotobold';
                         font-size: 16px;
                         text-transform: uppercase;
                         line-height: 1.2;
-                        padding: 8px 0;
+                        padding: 4px 0 5px;
                         border-bottom: 2px solid $violet-fleche;
                         display: inline-block;
                         margin-top: 0;
+                        margin-bottom: 12px;
                     }
                     p {
                         margin-bottom: 15px;
+                        line-height: 1.2;
                     }
                     img {
                         height: auto;
@@ -70,9 +146,10 @@
                         margin: 0 auto;
                     }
                     .custom-block {
-                        padding: 22px 34px;
+                        padding: 24px 34px 26px;
                         font-family: 'robotomedium';
                         margin-bottom: 10px;
+                        line-height: 1.2;
                         &.bg-blanc {
                             background-color: $blanc;
                         }
@@ -84,7 +161,7 @@
                             font-size: 20px;
                             text-transform: uppercase;
                             line-height: 1.2;
-                            margin: 0 0 10px;
+                            margin: 0 0 24px;
                             padding: 0;
                             border: 0 none;
                         }
@@ -93,9 +170,12 @@
                             margin: 0;
                             padding: 0;
                             li {
-                                margin-top: 20px;
+                                margin-top: 10px;
+                                padding-top: 0;
+                                padding-bottom: 8px; 
                                 padding-left: 20px;
                                 position: relative;
+                                line-height: 1.2;
                                 &:first-child {
                                     margin-top: 0;
                                 }
@@ -204,7 +284,17 @@
         }
     }
 }
-
+// FB like button
+.fb_iframe_widget {
+	vertical-align: top;
+}
+// Recyclage
+#recyclage {
+	p {
+		font-family: "robotomedium"; 
+	}
+}
+// liens
 #liens {
     background-color: $blanc;
     padding: 10px 0;
@@ -222,6 +312,15 @@
                     font-family: 'robotomedium';
                     color: #474747;
                 }
+                &:hover {
+                	&> a {
+	                	color: $orange;
+	                	text-decoration: none;
+                	}
+                	&:before {
+						color: $orange;
+                	}
+                }
                 &:before {
                     content: "\f105";
                     font-family: 'FontAwesome';
@@ -237,15 +336,41 @@
         }
     }
 }
-
+// Tablette
 @media only screen and (min-width:768px){
+	// description
+	#description {
+		.side-actu {
+			padding-bottom: 12px;
+			margin-top: 20px;
+	    	li {
+				width: 32%;
+				display: inline-block;
+				margin-top: 0;
+				&:first-child {
+					width: 34%;
+				}
+				&> div {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+	    	}
+	    }
+	    .side-bouton {
+	    	margin-top: 20px;
+	    	padding-left: 10px;
+	    	padding-right: 10px; 
+	    	padding-top: 0;
+	    }
+	}
     // detail-fiche
     #detail-fiche{
         padding: 20px 0 0 0;
         .accordion{
             padding: 0 10px;
             &> ul{
-                li{
+                &> li{
+
                     label{
                         display:inline-block;
                         height: 38px;
@@ -277,7 +402,13 @@
                             }
                         }
                     }
+                    .container {
+	                	padding-left: 10px;
+	                	padding-right: 10px;
+	                }
                     .content{
+                    	padding-left: 0;
+	                	padding-right: 0;
                         margin-bottom: 30px;
                         height:100%;
                     }
@@ -307,8 +438,25 @@
         }
     }
 }
-
+// Desktop
 @media only screen and (min-width:992px){
+	// Description
+	#description {
+		.side-actu{
+			margin-top: 0;
+			li {
+				width: 100%;
+				&:first-child {
+					width: 100%;
+				}
+			}
+		}
+		.side-bouton {
+			margin-top: 6px;
+	    	padding-left: 0;
+	    	padding-right: 0; 
+	    }
+	}
     // detail-fiche
     #detail-fiche{
         padding: 40px 0 0 0;
